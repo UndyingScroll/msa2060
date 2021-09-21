@@ -1,0 +1,3296 @@
+{
+    "dut_id": "12112",
+    "start_time_millis": 1611330202180,
+    "end_time_millis": 1611332536066,
+    "outcome": "FAIL",
+    "outcome_details": [],
+    "metadata": {
+        "test_name": "SNP_audit_test",
+        "config": {
+            "plug_teardown_timeout_s": 0,
+            "allow_unset_measurements": false,
+            "station_id": "TEST",
+            "cancel_timeout_s": 2,
+            "stop_on_first_failure": false,
+            "capture_source": false,
+            "capture_docstring": true,
+            "teardown_timeout_s": 30,
+            "user_input_enable_console": false,
+            "frontend_throttle_s": 0.15,
+            "station_server_port": "4444"
+        }
+    },
+    "phases": [
+        {
+            "measurements": {},
+            "options": {
+                "name": "SNP Audit Test",
+                "run_under_pdb": false
+            },
+            "start_time_millis": 1611330194575,
+            "end_time_millis": 1611330202180,
+            "attachments": {},
+            "result": {
+                "phase_result": "CONTINUE"
+            },
+            "outcome": "PASS",
+            "descriptor_id": 92769797448,
+            "name": "SNP Audit Test",
+            "codeinfo": {
+                "name": "DUT",
+                "docstring": null,
+                "sourcecode": ""
+            }
+        },
+        {
+            "measurements": {
+                "Conv_FPGA_HW": {
+                    "name": "Conv_FPGA_HW",
+                    "outcome": "PASS",
+                    "measured_value": "HW:2020d-11d-01d SW:2020-09-02"
+                },
+                "BB_FPGA_HW": {
+                    "name": "BB_FPGA_HW",
+                    "outcome": "PASS",
+                    "measured_value": "(S) HW:2020d-06d-10d SW:2020d-04d-27d"
+                },
+                "Sync_FPGA_HW": {
+                    "name": "Sync_FPGA_HW",
+                    "outcome": "PASS",
+                    "measured_value": "HW:2020d-06d-10d SW:2020-04-27"
+                },
+                "Rmap_FPGA_HW": {
+                    "name": "Rmap_FPGA_HW",
+                    "outcome": "PASS",
+                    "measured_value": "HW:2020d-06d-10d SW:2020-04-27"
+                },
+                "IP_FPGA_HW": {
+                    "name": "IP_FPGA_HW",
+                    "outcome": "PASS",
+                    "measured_value": "HW:2020d-08d-08d/SW:2020d-09d-14d"
+                },
+                "System_Software_Version": {
+                    "name": "System_Software_Version",
+                    "outcome": "PASS",
+                    "measured_value": "1.6.4.0"
+                },
+                "file_valid": {
+                    "name": "file_valid",
+                    "outcome": "PASS",
+                    "validators": [
+                        "x == True"
+                    ],
+                    "docstring": "Version YAML file valid",
+                    "measured_value": true
+                },
+                "file_exists": {
+                    "name": "file_exists",
+                    "outcome": "PASS",
+                    "validators": [
+                        "x == True"
+                    ],
+                    "docstring": "Version YAML file exists at C:\\SNP\\PropertyLoader\u000bersions.yaml",
+                    "measured_value": true
+                }
+            },
+            "options": {
+                "name": "Load SNP Versions file",
+                "run_under_pdb": false
+            },
+            "start_time_millis": 1611330202182,
+            "end_time_millis": 1611330202195,
+            "attachments": {},
+            "result": {
+                "phase_result": "CONTINUE"
+            },
+            "outcome": "PASS",
+            "descriptor_id": 92771662248,
+            "name": "Load SNP Versions file",
+            "codeinfo": {
+                "name": "property_loader",
+                "docstring": null,
+                "sourcecode": ""
+            }
+        },
+        {
+            "measurements": {},
+            "options": {
+                "name": "UUT Setup",
+                "run_under_pdb": false
+            },
+            "start_time_millis": 1611330202196,
+            "end_time_millis": 1611330205250,
+            "attachments": {},
+            "result": {
+                "phase_result": "CONTINUE"
+            },
+            "outcome": "PASS",
+            "descriptor_id": 92771662408,
+            "name": "UUT Setup",
+            "codeinfo": {
+                "name": "user_setup",
+                "docstring": null,
+                "sourcecode": ""
+            }
+        },
+        {
+            "measurements": {},
+            "options": {
+                "name": "Waiting for UUT to boot...4m 20s",
+                "run_under_pdb": false
+            },
+            "start_time_millis": 1611330205250,
+            "end_time_millis": 1611330505252,
+            "attachments": {},
+            "result": {
+                "phase_result": "CONTINUE"
+            },
+            "outcome": "PASS",
+            "descriptor_id": 92771662568,
+            "name": "Waiting for UUT to boot...4m 20s",
+            "codeinfo": {
+                "name": "waiting",
+                "docstring": null,
+                "sourcecode": ""
+            }
+        },
+        {
+            "measurements": {
+                "response_time": {
+                    "name": "response_time",
+                    "outcome": "PASS",
+                    "validators": [
+                        "0.0 <= x <= 1.0"
+                    ],
+                    "measured_value": 0.0009872913360595703
+                }
+            },
+            "options": {
+                "name": "Ping Test @ 192.168.100.250",
+                "run_under_pdb": false
+            },
+            "start_time_millis": 1611330505253,
+            "end_time_millis": 1611330505254,
+            "attachments": {},
+            "result": {
+                "phase_result": "CONTINUE"
+            },
+            "outcome": "PASS",
+            "descriptor_id": 92771662728,
+            "name": "Ping Test @ 192.168.100.250",
+            "codeinfo": {
+                "name": "ping_test",
+                "docstring": null,
+                "sourcecode": ""
+            }
+        },
+        {
+            "measurements": {
+                "ssh_response": {
+                    "name": "ssh_response",
+                    "outcome": "PASS",
+                    "measured_value": "{'status': 'ok'}"
+                },
+                "ssh_test": {
+                    "name": "ssh_test",
+                    "outcome": "PASS",
+                    "validators": [
+                        "x == True"
+                    ],
+                    "docstring": "Test SSH interface for connection",
+                    "measured_value": true
+                },
+                "ssh_enable": {
+                    "name": "ssh_enable",
+                    "outcome": "PASS",
+                    "validators": [
+                        "x == True"
+                    ],
+                    "docstring": "SNP UUT REST SSH enable PUT",
+                    "measured_value": true
+                },
+                "ssh_status": {
+                    "name": "ssh_status",
+                    "outcome": "PASS",
+                    "validators": [
+                        "x == True"
+                    ],
+                    "docstring": "SNP UUT REST SSH status GET request",
+                    "measured_value": true
+                },
+                "rest_status": {
+                    "name": "rest_status",
+                    "outcome": "PASS",
+                    "validators": [
+                        "x == True"
+                    ],
+                    "docstring": "SNP UUT REST interface response status",
+                    "measured_value": true
+                }
+            },
+            "options": {
+                "name": "Enable SSH on UUT",
+                "run_under_pdb": false
+            },
+            "start_time_millis": 1611330505255,
+            "end_time_millis": 1611330532946,
+            "attachments": {},
+            "result": {
+                "phase_result": "CONTINUE"
+            },
+            "outcome": "PASS",
+            "descriptor_id": 92771662888,
+            "name": "Enable SSH on UUT",
+            "codeinfo": {
+                "name": "ssh_enable",
+                "docstring": null,
+                "sourcecode": ""
+            }
+        },
+        {
+            "measurements": {
+                "PersonalityD": {
+                    "name": "PersonalityD",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^Sync$/"
+                    ],
+                    "measured_value": "Sync"
+                },
+                "PersonalityC": {
+                    "name": "PersonalityC",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^Sync$/"
+                    ],
+                    "measured_value": "Sync"
+                },
+                "PersonalityB": {
+                    "name": "PersonalityB",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^Sync$/"
+                    ],
+                    "measured_value": "Sync"
+                },
+                "PersonalityA": {
+                    "name": "PersonalityA",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^Sync$/"
+                    ],
+                    "measured_value": "Sync"
+                },
+                "BB4_FPGA": {
+                    "name": "BB4_FPGA",
+                    "outcome": "PASS",
+                    "measured_value": "(S) HW:2020d-06d-10d SW:2020d-04d-27d"
+                },
+                "BB4_FPGA_valid": {
+                    "name": "BB4_FPGA_valid",
+                    "outcome": "PASS",
+                    "validators": [
+                        "x == True"
+                    ],
+                    "measured_value": true
+                },
+                "BB3_FPGA": {
+                    "name": "BB3_FPGA",
+                    "outcome": "PASS",
+                    "measured_value": "(S) HW:2020d-06d-10d SW:2020d-04d-27d"
+                },
+                "BB3_FPGA_valid": {
+                    "name": "BB3_FPGA_valid",
+                    "outcome": "PASS",
+                    "validators": [
+                        "x == True"
+                    ],
+                    "measured_value": true
+                },
+                "BB2_FPGA": {
+                    "name": "BB2_FPGA",
+                    "outcome": "PASS",
+                    "measured_value": "(S) HW:2020d-06d-10d SW:2020d-04d-27d"
+                },
+                "BB2_FPGA_valid": {
+                    "name": "BB2_FPGA_valid",
+                    "outcome": "PASS",
+                    "validators": [
+                        "x == True"
+                    ],
+                    "measured_value": true
+                },
+                "BB1_FPGA": {
+                    "name": "BB1_FPGA",
+                    "outcome": "PASS",
+                    "measured_value": "(S) HW:2020d-06d-10d SW:2020d-04d-27d"
+                },
+                "BB1_FPGA_valid": {
+                    "name": "BB1_FPGA_valid",
+                    "outcome": "PASS",
+                    "validators": [
+                        "x == True"
+                    ],
+                    "measured_value": true
+                },
+                "IP_FPGA": {
+                    "name": "IP_FPGA",
+                    "outcome": "PASS",
+                    "measured_value": "HW:2020d-08d-08d/SW:2020d-09d-14d"
+                },
+                "IP_FPGA_valid": {
+                    "name": "IP_FPGA_valid",
+                    "outcome": "PASS",
+                    "validators": [
+                        "x == True"
+                    ],
+                    "measured_value": true
+                },
+                "SW_VER": {
+                    "name": "SW_VER",
+                    "outcome": "PASS",
+                    "measured_value": "1.6.4.0"
+                },
+                "SW_VER_valid": {
+                    "name": "SW_VER_valid",
+                    "outcome": "PASS",
+                    "validators": [
+                        "x == True"
+                    ],
+                    "measured_value": true
+                },
+                "Serial_Number": {
+                    "name": "Serial_Number",
+                    "outcome": "PASS",
+                    "measured_value": "0123456778"
+                },
+                "Serial_Number_valid": {
+                    "name": "Serial_Number_valid",
+                    "outcome": "FAIL",
+                    "validators": [
+                        "x == True"
+                    ],
+                    "measured_value": false
+                },
+                "result": {
+                    "name": "result",
+                    "outcome": "PASS",
+                    "validators": [
+                        "x == True"
+                    ],
+                    "measured_value": true
+                }
+            },
+            "options": {
+                "name": "System Software Status Read",
+                "run_under_pdb": false
+            },
+            "start_time_millis": 1611330532947,
+            "end_time_millis": 1611330541607,
+            "attachments": {},
+            "result": {
+                "phase_result": "CONTINUE"
+            },
+            "outcome": "FAIL",
+            "descriptor_id": 92771663208,
+            "name": "System Software Status Read",
+            "codeinfo": {
+                "name": "snp_versions",
+                "docstring": null,
+                "sourcecode": ""
+            }
+        },
+        {
+            "measurements": {
+                "status": {
+                    "name": "status",
+                    "outcome": "PASS",
+                    "validators": [
+                        "x == True"
+                    ],
+                    "measured_value": true
+                }
+            },
+            "options": {
+                "name": "Front Display Test",
+                "run_under_pdb": false
+            },
+            "start_time_millis": 1611330541608,
+            "end_time_millis": 1611331062135,
+            "attachments": {},
+            "result": {
+                "phase_result": "CONTINUE"
+            },
+            "outcome": "PASS",
+            "descriptor_id": 92771663368,
+            "name": "Front Display Test",
+            "codeinfo": {
+                "name": "display",
+                "docstring": null,
+                "sourcecode": ""
+            }
+        },
+        {
+            "measurements": {
+                "ProcessorD_SDI_valid": {
+                    "name": "ProcessorD_SDI_valid",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^True$/"
+                    ],
+                    "measured_value": true
+                },
+                "ProcessorD_SDI": {
+                    "name": "ProcessorD_SDI",
+                    "outcome": "PASS",
+                    "measured_value": [
+                        "\r\nroot@SNP-0123456778:~#",
+                        "md 3 0x100020 9\r\n00100020: 12906aa0 35906aa0 35906aa0 35906aa0 ..5.5.5.j.\r\n00100030: 12906aa0 35906aa0 35906aa0 35906aa0 ..5.5.5.j.\r\n00100040: 000000ff                            ....\r\nroot@SNP-0123456778:~#"
+                    ]
+                },
+                "ProcessorC_SDI_valid": {
+                    "name": "ProcessorC_SDI_valid",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^True$/"
+                    ],
+                    "measured_value": true
+                },
+                "ProcessorC_SDI": {
+                    "name": "ProcessorC_SDI",
+                    "outcome": "PASS",
+                    "measured_value": [
+                        "\r\nroot@SNP-0123456778:~#",
+                        "md 2 0x100020 9\r\n00100020: 12906aa0 35906aa0 35906aa0 35906aa0 ..5.5.5.j.\r\n00100030: 12906aa0 35906aa0 35906aa0 35906aa0 ..5.5.5.j.\r\n00100040: 000000ff                            ....\r\nroot@SNP-0123456778:~#"
+                    ]
+                },
+                "ProcessorB_SDI_valid": {
+                    "name": "ProcessorB_SDI_valid",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^True$/"
+                    ],
+                    "measured_value": true
+                },
+                "ProcessorB_SDI": {
+                    "name": "ProcessorB_SDI",
+                    "outcome": "PASS",
+                    "measured_value": [
+                        "\r\nroot@SNP-0123456778:~#",
+                        "md 1 0x100020 9\r\n00100020: 12906aa0 35906aa0 35906aa0 35906aa0 ..5.5.5.j.\r\n00100030: 12906aa0 35906aa0 35906aa0 35906aa0 ..5.5.5.j.\r\n00100040: 000000ff                            ....\r\nroot@SNP-0123456778:~#"
+                    ]
+                },
+                "ProcessorA_SDI_valid": {
+                    "name": "ProcessorA_SDI_valid",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^True$/"
+                    ],
+                    "measured_value": true
+                },
+                "ProcessorA_SDI": {
+                    "name": "ProcessorA_SDI",
+                    "outcome": "PASS",
+                    "measured_value": [
+                        "\r\nroot@SNP-0123456778:~#",
+                        "md 0 0x100020 9\r\n00100020: 12906aa0 35906aa0 35906aa0 35906aa0 ..5.5.5.j.\r\n00100030: 12906aa0 35906aa0 35906aa0 35906aa0 ..5.5.5.j.\r\n00100040: 000000ff                            ....\r\nroot@SNP-0123456778:~#"
+                    ]
+                },
+                "Mainboard_Temp": {
+                    "name": "Mainboard_Temp",
+                    "outcome": "PASS",
+                    "validators": [
+                        "20.0 <= x <= 60.0"
+                    ],
+                    "measured_value": 41.0
+                },
+                "IO_Temp": {
+                    "name": "IO_Temp",
+                    "outcome": "PASS",
+                    "validators": [
+                        "20.0 <= x <= 60.0"
+                    ],
+                    "measured_value": 44.0
+                },
+                "PS2_Good": {
+                    "name": "PS2_Good",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^True$/"
+                    ],
+                    "measured_value": true
+                },
+                "PS1_Good": {
+                    "name": "PS1_Good",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^True$/"
+                    ],
+                    "measured_value": true
+                },
+                "PS_HotSwap": {
+                    "name": "PS_HotSwap",
+                    "outcome": "PASS",
+                    "measured_value": false
+                },
+                "PS_Status": {
+                    "name": "PS_Status",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^OK$/"
+                    ],
+                    "measured_value": "OK"
+                },
+                "PS2_Enabled": {
+                    "name": "PS2_Enabled",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^True$/"
+                    ],
+                    "measured_value": true
+                },
+                "PS1_Enabled": {
+                    "name": "PS1_Enabled",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^True$/"
+                    ],
+                    "measured_value": true
+                },
+                "FPGA5_DDRAlarm": {
+                    "name": "FPGA5_DDRAlarm",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^$/"
+                    ],
+                    "measured_value": ""
+                },
+                "FPGA5_TempAlarm": {
+                    "name": "FPGA5_TempAlarm",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^False$/"
+                    ],
+                    "measured_value": false
+                },
+                "FPGA5_FanStatus": {
+                    "name": "FPGA5_FanStatus",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^OK$/"
+                    ],
+                    "measured_value": "OK"
+                },
+                "FPGA4_DDRAlarm": {
+                    "name": "FPGA4_DDRAlarm",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^$/"
+                    ],
+                    "measured_value": ""
+                },
+                "FPGA4_TempAlarm": {
+                    "name": "FPGA4_TempAlarm",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^False$/"
+                    ],
+                    "measured_value": false
+                },
+                "FPGA4_FanStatus": {
+                    "name": "FPGA4_FanStatus",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^OK$/"
+                    ],
+                    "measured_value": "OK"
+                },
+                "FPGA3_DDRAlarm": {
+                    "name": "FPGA3_DDRAlarm",
+                    "outcome": "FAIL",
+                    "validators": [
+                        "'x' matches /^$/"
+                    ],
+                    "measured_value": " DDR #3"
+                },
+                "FPGA3_TempAlarm": {
+                    "name": "FPGA3_TempAlarm",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^False$/"
+                    ],
+                    "measured_value": false
+                },
+                "FPGA3_FanStatus": {
+                    "name": "FPGA3_FanStatus",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^OK$/"
+                    ],
+                    "measured_value": "OK"
+                },
+                "FPGA2_DDRAlarm": {
+                    "name": "FPGA2_DDRAlarm",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^$/"
+                    ],
+                    "measured_value": ""
+                },
+                "FPGA2_TempAlarm": {
+                    "name": "FPGA2_TempAlarm",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^False$/"
+                    ],
+                    "measured_value": false
+                },
+                "FPGA2_FanStatus": {
+                    "name": "FPGA2_FanStatus",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^OK$/"
+                    ],
+                    "measured_value": "OK"
+                },
+                "FPGA1_DDRAlarm": {
+                    "name": "FPGA1_DDRAlarm",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^$/"
+                    ],
+                    "measured_value": ""
+                },
+                "FPGA1_TempAlarm": {
+                    "name": "FPGA1_TempAlarm",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^False$/"
+                    ],
+                    "measured_value": false
+                },
+                "FPGA1_FanStatus": {
+                    "name": "FPGA1_FanStatus",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^OK$/"
+                    ],
+                    "measured_value": "OK"
+                },
+                "Front4_FanStatus": {
+                    "name": "Front4_FanStatus",
+                    "outcome": "PASS",
+                    "measured_value": "OK"
+                },
+                "Front3_FanStatus": {
+                    "name": "Front3_FanStatus",
+                    "outcome": "PASS",
+                    "measured_value": "OK"
+                },
+                "Front2_FanStatus": {
+                    "name": "Front2_FanStatus",
+                    "outcome": "PASS",
+                    "measured_value": "OK"
+                },
+                "Front1_FanStatus": {
+                    "name": "Front1_FanStatus",
+                    "outcome": "PASS",
+                    "measured_value": "OK"
+                }
+            },
+            "options": {
+                "name": "Built In Software Test",
+                "run_under_pdb": false
+            },
+            "start_time_millis": 1611331062137,
+            "end_time_millis": 1611331079720,
+            "attachments": {},
+            "result": {
+                "phase_result": "CONTINUE"
+            },
+            "outcome": "FAIL",
+            "descriptor_id": 92771663528,
+            "name": "Built In Software Test",
+            "codeinfo": {
+                "name": "bist",
+                "docstring": null,
+                "sourcecode": ""
+            }
+        },
+        {
+            "measurements": {
+                "procD_StdDetect": {
+                    "name": "procD_StdDetect",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' is equal to '['1080p/50', '1080p/50', '1080p/50', '1080p/50', 'Unknown', 'Unknown', 'Unknown', 'Unknown']'"
+                    ],
+                    "measured_value": [
+                        "1080p/50",
+                        "1080p/50",
+                        "1080p/50",
+                        "1080p/50",
+                        "Unknown",
+                        "Unknown",
+                        "Unknown",
+                        "Unknown"
+                    ]
+                },
+                "procD_VidPres": {
+                    "name": "procD_VidPres",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' is equal to '[True, True, True, True, False, False, False, False]'"
+                    ],
+                    "measured_value": [
+                        true,
+                        true,
+                        true,
+                        true,
+                        false,
+                        false,
+                        false,
+                        false
+                    ]
+                },
+                "procD": {
+                    "name": "procD",
+                    "outcome": "PASS",
+                    "measured_value": [
+                        "D-HD-1",
+                        "D-HD-2",
+                        "D-HD-3",
+                        "D-HD-4",
+                        "D-HD-5",
+                        "D-HD-6",
+                        "D-HD-7",
+                        "D-HD-8"
+                    ]
+                },
+                "procC_StdDetect": {
+                    "name": "procC_StdDetect",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' is equal to '['1080p/50', '1080p/50', '1080p/50', '1080p/50', 'Unknown', 'Unknown', 'Unknown', 'Unknown']'"
+                    ],
+                    "measured_value": [
+                        "1080p/50",
+                        "1080p/50",
+                        "1080p/50",
+                        "1080p/50",
+                        "Unknown",
+                        "Unknown",
+                        "Unknown",
+                        "Unknown"
+                    ]
+                },
+                "procC_VidPres": {
+                    "name": "procC_VidPres",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' is equal to '[True, True, True, True, False, False, False, False]'"
+                    ],
+                    "measured_value": [
+                        true,
+                        true,
+                        true,
+                        true,
+                        false,
+                        false,
+                        false,
+                        false
+                    ]
+                },
+                "procC": {
+                    "name": "procC",
+                    "outcome": "PASS",
+                    "measured_value": [
+                        "C-HD-1",
+                        "C-HD-2",
+                        "C-HD-3",
+                        "C-HD-4",
+                        "C-HD-5",
+                        "C-HD-6",
+                        "C-HD-7",
+                        "C-HD-8"
+                    ]
+                },
+                "procB_StdDetect": {
+                    "name": "procB_StdDetect",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' is equal to '['Unknown', 'Unknown', 'Unknown', 'Unknown', '1080p/50', '1080p/50', '1080p/50', '1080p/50']'"
+                    ],
+                    "measured_value": [
+                        "Unknown",
+                        "Unknown",
+                        "Unknown",
+                        "Unknown",
+                        "1080p/50",
+                        "1080p/50",
+                        "1080p/50",
+                        "1080p/50"
+                    ]
+                },
+                "procB_VidPres": {
+                    "name": "procB_VidPres",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' is equal to '[False, False, False, False, True, True, True, True]'"
+                    ],
+                    "measured_value": [
+                        false,
+                        false,
+                        false,
+                        false,
+                        true,
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                "procB": {
+                    "name": "procB",
+                    "outcome": "PASS",
+                    "measured_value": [
+                        "B-HD-1",
+                        "B-HD-2",
+                        "B-HD-3",
+                        "B-HD-4",
+                        "B-HD-5",
+                        "B-HD-6",
+                        "B-HD-7",
+                        "B-HD-8"
+                    ]
+                },
+                "procA_StdDetect": {
+                    "name": "procA_StdDetect",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' is equal to '['Unknown', 'Unknown', 'Unknown', 'Unknown', '1080p/50', '1080p/50', '1080p/50', '1080p/50']'"
+                    ],
+                    "measured_value": [
+                        "Unknown",
+                        "Unknown",
+                        "Unknown",
+                        "Unknown",
+                        "1080p/50",
+                        "1080p/50",
+                        "1080p/50",
+                        "1080p/50"
+                    ]
+                },
+                "procA_VidPres": {
+                    "name": "procA_VidPres",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' is equal to '[False, False, False, False, True, True, True, True]'"
+                    ],
+                    "measured_value": [
+                        false,
+                        false,
+                        false,
+                        false,
+                        true,
+                        true,
+                        true,
+                        true
+                    ]
+                },
+                "procA": {
+                    "name": "procA",
+                    "outcome": "PASS",
+                    "measured_value": [
+                        "A-HD-1",
+                        "A-HD-2",
+                        "A-HD-3",
+                        "A-HD-4",
+                        "A-HD-5",
+                        "A-HD-6",
+                        "A-HD-7",
+                        "A-HD-8"
+                    ]
+                },
+                "RxBw25G": {
+                    "name": "RxBw25G",
+                    "outcome": "PASS",
+                    "measured_value": "None"
+                },
+                "TxBw25G": {
+                    "name": "TxBw25G",
+                    "outcome": "PASS",
+                    "measured_value": "None"
+                },
+                "secSwitch": {
+                    "name": "secSwitch",
+                    "outcome": "PASS",
+                    "measured_value": "None"
+                },
+                "secSwitch_valid": {
+                    "name": "secSwitch_valid",
+                    "outcome": "FAIL",
+                    "validators": [
+                        "x == True"
+                    ],
+                    "measured_value": false
+                },
+                "priSwitch": {
+                    "name": "priSwitch",
+                    "outcome": "PASS",
+                    "measured_value": "None"
+                },
+                "priSwitch_valid": {
+                    "name": "priSwitch_valid",
+                    "outcome": "FAIL",
+                    "validators": [
+                        "x == True"
+                    ],
+                    "measured_value": false
+                },
+                "host": {
+                    "name": "host",
+                    "outcome": "PASS",
+                    "measured_value": "SNP-0123456778"
+                },
+                "secRxErr": {
+                    "name": "secRxErr",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^0$/"
+                    ],
+                    "measured_value": "0"
+                },
+                "priRxErr": {
+                    "name": "priRxErr",
+                    "outcome": "PASS",
+                    "validators": [
+                        "'x' matches /^0$/"
+                    ],
+                    "measured_value": "0"
+                },
+                "secRx": {
+                    "name": "secRx",
+                    "outcome": "FAIL",
+                    "validators": [
+                        "25.0 <= x <= 55.0"
+                    ],
+                    "measured_value": 0.0
+                },
+                "priRx": {
+                    "name": "priRx",
+                    "outcome": "FAIL",
+                    "validators": [
+                        "25.0 <= x <= 55.0"
+                    ],
+                    "measured_value": 0.0
+                },
+                "secTx": {
+                    "name": "secTx",
+                    "outcome": "FAIL",
+                    "validators": [
+                        "25.0 <= x <= 55.0"
+                    ],
+                    "measured_value": 0.0
+                },
+                "priTx": {
+                    "name": "priTx",
+                    "outcome": "FAIL",
+                    "validators": [
+                        "25.0 <= x <= 55.0"
+                    ],
+                    "measured_value": 0.0
+                },
+                "secMAC": {
+                    "name": "secMAC",
+                    "outcome": "PASS",
+                    "measured_value": "09:44:44:44:44:44"
+                },
+                "priMAC": {
+                    "name": "priMAC",
+                    "outcome": "PASS",
+                    "measured_value": "09:33:33:33:33:33"
+                }
+            },
+            "options": {
+                "name": "QSFP 100G Ethernet Loopback test",
+                "run_under_pdb": false
+            },
+            "start_time_millis": 1611331079722,
+            "end_time_millis": 1611332169402,
+            "attachments": {},
+            "result": {
+                "phase_result": "CONTINUE"
+            },
+            "outcome": "FAIL",
+            "descriptor_id": 92771663688,
+            "name": "QSFP 100G Ethernet Loopback test",
+            "codeinfo": {
+                "name": "qsfp",
+                "docstring": null,
+                "sourcecode": ""
+            }
+        },
+        {
+            "measurements": {
+                "java": {
+                    "name": "java",
+                    "outcome": "PASS",
+                    "validators": [
+                        "x == True"
+                    ],
+                    "docstring": "kill java for front panel fan test",
+                    "measured_value": true
+                },
+                "fan4_Control": {
+                    "name": "fan4_Control",
+                    "outcome": "PASS",
+                    "validators": [
+                        "x == True"
+                    ],
+                    "docstring": "fan4 controls ok",
+                    "measured_value": true
+                },
+                "fan3_Control": {
+                    "name": "fan3_Control",
+                    "outcome": "PASS",
+                    "validators": [
+                        "x == True"
+                    ],
+                    "docstring": "fan3 controls ok",
+                    "measured_value": true
+                },
+                "fan2_Control": {
+                    "name": "fan2_Control",
+                    "outcome": "PASS",
+                    "validators": [
+                        "x == True"
+                    ],
+                    "docstring": "fan2 controls ok",
+                    "measured_value": true
+                },
+                "fan1_Control": {
+                    "name": "fan1_Control",
+                    "outcome": "PASS",
+                    "validators": [
+                        "x == True"
+                    ],
+                    "docstring": "fan1 controls ok",
+                    "measured_value": true
+                },
+                "fan4_OK": {
+                    "name": "fan4_OK",
+                    "outcome": "PASS",
+                    "validators": [
+                        "x == True"
+                    ],
+                    "docstring": "fan4 speed is within limits",
+                    "measured_value": true
+                },
+                "fan3_OK": {
+                    "name": "fan3_OK",
+                    "outcome": "PASS",
+                    "validators": [
+                        "x == True"
+                    ],
+                    "docstring": "fan3 speed is within limits",
+                    "measured_value": true
+                },
+                "fan2_OK": {
+                    "name": "fan2_OK",
+                    "outcome": "PASS",
+                    "validators": [
+                        "x == True"
+                    ],
+                    "docstring": "fan2 speed is within limits",
+                    "measured_value": true
+                },
+                "fan1_OK": {
+                    "name": "fan1_OK",
+                    "outcome": "PASS",
+                    "validators": [
+                        "x == True"
+                    ],
+                    "docstring": "fan1 speed is within limits",
+                    "measured_value": true
+                }
+            },
+            "options": {
+                "name": "Front Panel Fans Test",
+                "run_under_pdb": false
+            },
+            "start_time_millis": 1611332169403,
+            "end_time_millis": 1611332185450,
+            "attachments": {},
+            "result": {
+                "phase_result": "CONTINUE"
+            },
+            "outcome": "PASS",
+            "descriptor_id": 92771684424,
+            "name": "Front Panel Fans Test",
+            "codeinfo": {
+                "name": "front_panel",
+                "docstring": null,
+                "sourcecode": ""
+            }
+        },
+        {
+            "measurements": {
+                "shutdown": {
+                    "name": "shutdown",
+                    "outcome": "PASS",
+                    "validators": [
+                        "x == True"
+                    ],
+                    "docstring": "ssh shutdown -r now command",
+                    "measured_value": true
+                }
+            },
+            "options": {
+                "name": "SSH Shutdown",
+                "run_under_pdb": false
+            },
+            "start_time_millis": 1611332185450,
+            "end_time_millis": 1611332187365,
+            "attachments": {},
+            "result": {
+                "phase_result": "CONTINUE"
+            },
+            "outcome": "PASS",
+            "descriptor_id": 92771684584,
+            "name": "SSH Shutdown",
+            "codeinfo": {
+                "name": "shutdown",
+                "docstring": null,
+                "sourcecode": ""
+            }
+        },
+        {
+            "measurements": {},
+            "options": {
+                "name": "Waiting for UUT to boot...4m 20s",
+                "run_under_pdb": false
+            },
+            "start_time_millis": 1611332187365,
+            "end_time_millis": 1611332487365,
+            "attachments": {},
+            "result": {
+                "phase_result": "CONTINUE"
+            },
+            "outcome": "PASS",
+            "descriptor_id": 92771684744,
+            "name": "Waiting for UUT to boot...4m 20s",
+            "codeinfo": {
+                "name": "waiting",
+                "docstring": null,
+                "sourcecode": ""
+            }
+        },
+        {
+            "measurements": {
+                "result": {
+                    "name": "result",
+                    "outcome": "PASS",
+                    "validators": [
+                        "x == 200"
+                    ],
+                    "measured_value": 200
+                }
+            },
+            "options": {
+                "name": "Clear Alarms Log",
+                "run_under_pdb": false
+            },
+            "start_time_millis": 1611332487365,
+            "end_time_millis": 1611332492069,
+            "attachments": {},
+            "result": {
+                "phase_result": "CONTINUE"
+            },
+            "outcome": "PASS",
+            "descriptor_id": 92771684904,
+            "name": "Clear Alarms Log",
+            "codeinfo": {
+                "name": "clear_logs",
+                "docstring": null,
+                "sourcecode": ""
+            }
+        },
+        {
+            "measurements": {},
+            "options": {
+                "name": "SNP Restore Factory Defaults",
+                "run_under_pdb": false
+            },
+            "start_time_millis": 1611332492070,
+            "end_time_millis": 1611332536063,
+            "attachments": {},
+            "result": {
+                "phase_result": "CONTINUE"
+            },
+            "outcome": "PASS",
+            "descriptor_id": 92771685064,
+            "name": "SNP Restore Factory Defaults",
+            "codeinfo": {
+                "name": "factory_reset",
+                "docstring": null,
+                "sourcecode": ""
+            }
+        }
+    ],
+    "log_records": [
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 249,
+            "timestamp_millis": 1611330194575,
+            "message": "Executing phase SNP Audit Test"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.plugs.user_input",
+            "source": "user_input.py",
+            "lineno": 369,
+            "timestamp_millis": 1611330194576,
+            "message": "Displaying prompt (5cec24110ab54fabb08a2c3ec0df07a1): \"{'schema': {'title': 'SNP Audit Test', 'type': 'object', 'required': ['serialnumber'], 'properties': {'serialnumber': {'type': 'string', 'title': 'Serial Number'}, 'done': {'type': 'boolean', 'title': 'Quit', 'default': False}}}, 'layout': ['serialnumber', 'done']}\""
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.output.servers.pub_sub",
+            "source": "pub_sub.py",
+            "lineno": 58,
+            "timestamp_millis": 1611330194596,
+            "message": "New subscriber from ::1."
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.output.servers.pub_sub",
+            "source": "pub_sub.py",
+            "lineno": 58,
+            "timestamp_millis": 1611330195639,
+            "message": "New subscriber from ::1."
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.output.servers.pub_sub",
+            "source": "pub_sub.py",
+            "lineno": 58,
+            "timestamp_millis": 1611330197288,
+            "message": "New subscriber from ::1."
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.output.servers.pub_sub",
+            "source": "pub_sub.py",
+            "lineno": 58,
+            "timestamp_millis": 1611330198711,
+            "message": "New subscriber from ::1."
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.plugs.user_input",
+            "source": "user_input.py",
+            "lineno": 432,
+            "timestamp_millis": 1611330202180,
+            "message": "Responding to prompt (5cec24110ab54fabb08a2c3ec0df07a1): \"{'content': {'serialnumber': '12112', 'done': False}}\""
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.util.threads",
+            "source": "threads.py",
+            "lineno": 169,
+            "timestamp_millis": 1611330202180,
+            "message": "Thread finished: <PhaseExecutorThread: (SNP Audit Test)>"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 277,
+            "timestamp_millis": 1611330202180,
+            "message": "Phase SNP Audit Test finished with result PhaseResult.CONTINUE"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574",
+            "source": "test_executor.py",
+            "lineno": 327,
+            "timestamp_millis": 1611330202181,
+            "message": "Entering PhaseGroup SNP_audit_test"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574",
+            "source": "test_executor.py",
+            "lineno": 280,
+            "timestamp_millis": 1611330202181,
+            "message": "Executing main phases for SNP_audit_test"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574",
+            "source": "test_executor.py",
+            "lineno": 248,
+            "timestamp_millis": 1611330202181,
+            "message": "Handling phase Load SNP Versions file"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 249,
+            "timestamp_millis": 1611330202182,
+            "message": "Executing phase Load SNP Versions file"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.util.threads",
+            "source": "threads.py",
+            "lineno": 169,
+            "timestamp_millis": 1611330202194,
+            "message": "Thread finished: <PhaseExecutorThread: (Load SNP Versions file)>"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 277,
+            "timestamp_millis": 1611330202196,
+            "message": "Phase Load SNP Versions file finished with result PhaseResult.CONTINUE"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574",
+            "source": "test_executor.py",
+            "lineno": 248,
+            "timestamp_millis": 1611330202196,
+            "message": "Handling phase UUT Setup"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 249,
+            "timestamp_millis": 1611330202196,
+            "message": "Executing phase UUT Setup"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.plugs.user_input",
+            "source": "user_input.py",
+            "lineno": 369,
+            "timestamp_millis": 1611330202196,
+            "message": "Displaying prompt (887ebe41d21d4ee2b42b380c7d12465b): \"{'schema': {'title': 'SNP Audit Test', 'type': 'object', 'properties': {}}, 'layout': [{'type': 'help', 'helpvalue': '<h2>Connect the Primary and Secondary Power Supply cables.</h2>\\n\\n<h2>Connect either  the MGMT A or MGMT B Ethernet cables.</h2>\\n\\n<h2>Connect the QSFP A and QSFP B cable.</h2>\\n\\n<h2>When all cables are connected turn on the front panel power switch</h2>\\n\\n<p><img src=\"http://192.168.234.25/img/img_4869.jpg\" width=\"800px\" /></p>\\n'}]}\""
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.plugs.user_input",
+            "source": "user_input.py",
+            "lineno": 432,
+            "timestamp_millis": 1611330205249,
+            "message": "Responding to prompt (887ebe41d21d4ee2b42b380c7d12465b): \"{'content': {}, 'option': 'OKAY'}\""
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.util.threads",
+            "source": "threads.py",
+            "lineno": 169,
+            "timestamp_millis": 1611330205250,
+            "message": "Thread finished: <PhaseExecutorThread: (UUT Setup)>"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 277,
+            "timestamp_millis": 1611330205250,
+            "message": "Phase UUT Setup finished with result PhaseResult.CONTINUE"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574",
+            "source": "test_executor.py",
+            "lineno": 248,
+            "timestamp_millis": 1611330205250,
+            "message": "Handling phase Waiting for UUT to boot...4m 20s"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 249,
+            "timestamp_millis": 1611330205250,
+            "message": "Executing phase Waiting for UUT to boot...4m 20s"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.output.servers.pub_sub",
+            "source": "pub_sub.py",
+            "lineno": 58,
+            "timestamp_millis": 1611330229874,
+            "message": "New subscriber from ::1."
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.output.servers.pub_sub",
+            "source": "pub_sub.py",
+            "lineno": 58,
+            "timestamp_millis": 1611330234912,
+            "message": "New subscriber from ::1."
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.output.servers.pub_sub",
+            "source": "pub_sub.py",
+            "lineno": 58,
+            "timestamp_millis": 1611330241396,
+            "message": "New subscriber from ::1."
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.output.servers.pub_sub",
+            "source": "pub_sub.py",
+            "lineno": 58,
+            "timestamp_millis": 1611330245820,
+            "message": "New subscriber from ::1."
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.util.threads",
+            "source": "threads.py",
+            "lineno": 169,
+            "timestamp_millis": 1611330505252,
+            "message": "Thread finished: <PhaseExecutorThread: (Waiting for UUT to boot...4m 20s)>"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 277,
+            "timestamp_millis": 1611330505252,
+            "message": "Phase Waiting for UUT to boot...4m 20s finished with result PhaseResult.CONTINUE"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574",
+            "source": "test_executor.py",
+            "lineno": 248,
+            "timestamp_millis": 1611330505252,
+            "message": "Handling phase Ping Test @ 192.168.100.250"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 249,
+            "timestamp_millis": 1611330505253,
+            "message": "Executing phase Ping Test @ 192.168.100.250"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.util.threads",
+            "source": "threads.py",
+            "lineno": 169,
+            "timestamp_millis": 1611330505254,
+            "message": "Thread finished: <PhaseExecutorThread: (Ping Test @ 192.168.100.250)>"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 277,
+            "timestamp_millis": 1611330505254,
+            "message": "Phase Ping Test @ 192.168.100.250 finished with result PhaseResult.CONTINUE"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574",
+            "source": "test_executor.py",
+            "lineno": 248,
+            "timestamp_millis": 1611330505254,
+            "message": "Handling phase Enable SSH on UUT"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 249,
+            "timestamp_millis": 1611330505255,
+            "message": "Executing phase Enable SSH on UUT"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 39,
+            "timestamp_millis": 1611330532138,
+            "message": "su - \r\nSNP-0123456778:~$ su - \r\nPassword: "
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 43,
+            "timestamp_millis": 1611330532239,
+            "message": "Authenticating..."
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 47,
+            "timestamp_millis": 1611330532340,
+            "message": "\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 57,
+            "timestamp_millis": 1611330532642,
+            "message": "pwd\r\n/home/root\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 57,
+            "timestamp_millis": 1611330532945,
+            "message": "exit\r\nlogout\r\nSNP-0123456778:~$"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.Enable SSH on UUT",
+            "source": "ssh_enable.py",
+            "lineno": 61,
+            "timestamp_millis": 1611330532945,
+            "message": "['\\r\\nroot@SNP-0123456778:~#', 'pwd\\r\\n/home/root\\r\\nroot@SNP-0123456778:~#', 'exit\\r\\nlogout\\r\\nSNP-0123456778:~$']"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.util.threads",
+            "source": "threads.py",
+            "lineno": 169,
+            "timestamp_millis": 1611330532945,
+            "message": "Thread finished: <PhaseExecutorThread: (Enable SSH on UUT)>"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 277,
+            "timestamp_millis": 1611330532946,
+            "message": "Phase Enable SSH on UUT finished with result PhaseResult.CONTINUE"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574",
+            "source": "test_executor.py",
+            "lineno": 248,
+            "timestamp_millis": 1611330532946,
+            "message": "Handling phase System Software Status Read"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 249,
+            "timestamp_millis": 1611330532947,
+            "message": "Executing phase System Software Status Read"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.System Software Status Read",
+            "source": "snp_versions.py",
+            "lineno": 68,
+            "timestamp_millis": 1611330541606,
+            "message": "12112"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.util.threads",
+            "source": "threads.py",
+            "lineno": 169,
+            "timestamp_millis": 1611330541607,
+            "message": "Thread finished: <PhaseExecutorThread: (System Software Status Read)>"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 277,
+            "timestamp_millis": 1611330541607,
+            "message": "Phase System Software Status Read finished with result PhaseResult.CONTINUE"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574",
+            "source": "test_executor.py",
+            "lineno": 248,
+            "timestamp_millis": 1611330541607,
+            "message": "Handling phase Front Display Test"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 249,
+            "timestamp_millis": 1611330541608,
+            "message": "Executing phase Front Display Test"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.plugs.user_input",
+            "source": "user_input.py",
+            "lineno": 369,
+            "timestamp_millis": 1611330541608,
+            "message": "Displaying prompt (86392aef0b9f4fd48496da73a8832cf9): \"{'schema': {'title': 'SNP Audit Test', 'type': 'object', 'required': [], 'properties': {'dropdown': {'type': 'string', 'default': 'FAIL', 'title': 'Display Result'}}}, 'layout': [{'type': 'help', 'helpvalue': '<h2>Turn the Front Control knob Up and Down and press Enter. Verify that the Front Control Panel Display is ON and displaying text</h2>\\n\\n<p><img src=\"http://192.168.234.25/img/snp_display.jpg\" width=\"800px\" /></p>\\n'}, {'key': 'dropdown', 'type': 'select', 'titleMap': [{'value': 'FAIL', 'name': 'Display Fail'}, {'value': 'PASS', 'name': 'Display Pass'}]}]}\""
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.plugs.user_input",
+            "source": "user_input.py",
+            "lineno": 432,
+            "timestamp_millis": 1611331062134,
+            "message": "Responding to prompt (86392aef0b9f4fd48496da73a8832cf9): \"{'content': {'dropdown': 'PASS'}, 'option': 'OKAY'}\""
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.util.threads",
+            "source": "threads.py",
+            "lineno": 169,
+            "timestamp_millis": 1611331062135,
+            "message": "Thread finished: <PhaseExecutorThread: (Front Display Test)>"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 277,
+            "timestamp_millis": 1611331062135,
+            "message": "Phase Front Display Test finished with result PhaseResult.CONTINUE"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574",
+            "source": "test_executor.py",
+            "lineno": 248,
+            "timestamp_millis": 1611331062135,
+            "message": "Handling phase Built In Software Test"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 249,
+            "timestamp_millis": 1611331062137,
+            "message": "Executing phase Built In Software Test"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.Built In Software Test",
+            "source": "bist.py",
+            "lineno": 65,
+            "timestamp_millis": 1611331068083,
+            "message": "[{'idx': 1, 'Status': 'OK'}, {'idx': 2, 'Status': 'OK'}, {'idx': 3, 'Status': 'OK'}, {'idx': 4, 'Status': 'OK'}]"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.Built In Software Test",
+            "source": "bist.py",
+            "lineno": 75,
+            "timestamp_millis": 1611331069067,
+            "message": "[{'idx': 1, 'Temp': '61.5 \u00b0C', 'Temp_Alarm': False, 'Fan_Status': 'OK', 'Fan_Alarm': False, 'Calib_Alarm': ''}, {'idx': 2, 'Temp': '69.0 \u00b0C', 'Temp_Alarm': False, 'Fan_Status': 'OK', 'Fan_Alarm': False, 'Calib_Alarm': ''}, {'idx': 3, 'Temp': '68.5 \u00b0C', 'Temp_Alarm': False, 'Fan_Status': 'OK', 'Fan_Alarm': False, 'Calib_Alarm': ' DDR #3'}, {'idx': 4, 'Temp': '59.5 \u00b0C', 'Temp_Alarm': False, 'Fan_Status': 'OK', 'Fan_Alarm': False, 'Calib_Alarm': ''}, {'idx': 5, 'Temp': '55.5 \u00b0C', 'Temp_Alarm': False, 'Fan_Status': 'OK', 'Fan_Alarm': False, 'Calib_Alarm': ''}]"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.Built In Software Test",
+            "source": "bist.py",
+            "lineno": 97,
+            "timestamp_millis": 1611331070098,
+            "message": "{'PS_EN_1': True, 'PS_EN_2': True, 'PS_Status': 'OK', 'PS_Fan_Status_1': True, 'PS_Fan_Status_2': True, 'PS_Fan_Alarm': False, 'PS_Hot_Swap': False, 'PS_Present_1': False, 'PS_Present_2': False}"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.Built In Software Test",
+            "source": "bist.py",
+            "lineno": 113,
+            "timestamp_millis": 1611331071140,
+            "message": "{'Main_Board': '41.0 \u00b0C', 'IO_Board': '44.0 \u00b0C'}"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 39,
+            "timestamp_millis": 1611331072519,
+            "message": "su - \r\nSNP-0123456778:~$ su - \r\nPassword: "
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 43,
+            "timestamp_millis": 1611331072620,
+            "message": "Authenticating..."
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 47,
+            "timestamp_millis": 1611331072721,
+            "message": "\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 57,
+            "timestamp_millis": 1611331073023,
+            "message": "md 0 0x100020 9\r\n00100020: 12906aa0 35906aa0 35906aa0 35906aa0 ..5.5.5.j.\r\n00100030: 12906aa0 35906aa0 35906aa0 35906aa0 ..5.5.5.j.\r\n00100040: 000000ff                            ....\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.Built In Software Test",
+            "source": "bist.py",
+            "lineno": 126,
+            "timestamp_millis": 1611331073023,
+            "message": "['\\r\\nroot@SNP-0123456778:~#', 'md 0 0x100020 9\\r\\n00100020: 12906aa0 35906aa0 35906aa0 35906aa0 ..5.5.5.j.\\r\\n00100030: 12906aa0 35906aa0 35906aa0 35906aa0 ..5.5.5.j.\\r\\n00100040: 000000ff                            ....\\r\\nroot@SNP-0123456778:~#']"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.Built In Software Test",
+            "source": "bist.py",
+            "lineno": 135,
+            "timestamp_millis": 1611331073023,
+            "message": "Proc 1 SDI Transceiver 12G: 2 3G: 6"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 39,
+            "timestamp_millis": 1611331074385,
+            "message": "su - \r\nSNP-0123456778:~$ su - \r\nPassword: "
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 43,
+            "timestamp_millis": 1611331074486,
+            "message": "Authenticating..."
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 47,
+            "timestamp_millis": 1611331074587,
+            "message": "\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 57,
+            "timestamp_millis": 1611331074889,
+            "message": "md 1 0x100020 9\r\n00100020: 12906aa0 35906aa0 35906aa0 35906aa0 ..5.5.5.j.\r\n00100030: 12906aa0 35906aa0 35906aa0 35906aa0 ..5.5.5.j.\r\n00100040: 000000ff                            ....\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.Built In Software Test",
+            "source": "bist.py",
+            "lineno": 147,
+            "timestamp_millis": 1611331074889,
+            "message": "['\\r\\nroot@SNP-0123456778:~#', 'md 1 0x100020 9\\r\\n00100020: 12906aa0 35906aa0 35906aa0 35906aa0 ..5.5.5.j.\\r\\n00100030: 12906aa0 35906aa0 35906aa0 35906aa0 ..5.5.5.j.\\r\\n00100040: 000000ff                            ....\\r\\nroot@SNP-0123456778:~#']"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.Built In Software Test",
+            "source": "bist.py",
+            "lineno": 156,
+            "timestamp_millis": 1611331074889,
+            "message": "Proc 2 SDI Transceiver 12G: 2 3G: 6"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 39,
+            "timestamp_millis": 1611331076266,
+            "message": "su - \r\nSNP-0123456778:~$ su - \r\nPassword: "
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 43,
+            "timestamp_millis": 1611331076367,
+            "message": "Authenticating..."
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 47,
+            "timestamp_millis": 1611331076468,
+            "message": "\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 57,
+            "timestamp_millis": 1611331076771,
+            "message": "md 2 0x100020 9\r\n00100020: 12906aa0 35906aa0 35906aa0 35906aa0 ..5.5.5.j.\r\n00100030: 12906aa0 35906aa0 35906aa0 35906aa0 ..5.5.5.j.\r\n00100040: 000000ff                            ....\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.Built In Software Test",
+            "source": "bist.py",
+            "lineno": 168,
+            "timestamp_millis": 1611331076771,
+            "message": "['\\r\\nroot@SNP-0123456778:~#', 'md 2 0x100020 9\\r\\n00100020: 12906aa0 35906aa0 35906aa0 35906aa0 ..5.5.5.j.\\r\\n00100030: 12906aa0 35906aa0 35906aa0 35906aa0 ..5.5.5.j.\\r\\n00100040: 000000ff                            ....\\r\\nroot@SNP-0123456778:~#']"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.Built In Software Test",
+            "source": "bist.py",
+            "lineno": 177,
+            "timestamp_millis": 1611331076772,
+            "message": "Proc 3 SDI Transceiver 12G: 2 3G: 6"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 39,
+            "timestamp_millis": 1611331078214,
+            "message": "su - \r\nSNP-0123456778:~$ su - \r\nPassword: "
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 43,
+            "timestamp_millis": 1611331078315,
+            "message": "Authenticating..."
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 47,
+            "timestamp_millis": 1611331078416,
+            "message": "\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 57,
+            "timestamp_millis": 1611331078718,
+            "message": "md 3 0x100020 9\r\n00100020: 12906aa0 35906aa0 35906aa0 35906aa0 ..5.5.5.j.\r\n00100030: 12906aa0 35906aa0 35906aa0 35906aa0 ..5.5.5.j.\r\n00100040: 000000ff                            ....\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.Built In Software Test",
+            "source": "bist.py",
+            "lineno": 189,
+            "timestamp_millis": 1611331078718,
+            "message": "['\\r\\nroot@SNP-0123456778:~#', 'md 3 0x100020 9\\r\\n00100020: 12906aa0 35906aa0 35906aa0 35906aa0 ..5.5.5.j.\\r\\n00100030: 12906aa0 35906aa0 35906aa0 35906aa0 ..5.5.5.j.\\r\\n00100040: 000000ff                            ....\\r\\nroot@SNP-0123456778:~#']"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.Built In Software Test",
+            "source": "bist.py",
+            "lineno": 198,
+            "timestamp_millis": 1611331078718,
+            "message": "Proc 4 SDI Transceiver 12G: 2 3G: 6"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.util.threads",
+            "source": "threads.py",
+            "lineno": 169,
+            "timestamp_millis": 1611331079719,
+            "message": "Thread finished: <PhaseExecutorThread: (Built In Software Test)>"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 277,
+            "timestamp_millis": 1611331079720,
+            "message": "Phase Built In Software Test finished with result PhaseResult.CONTINUE"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574",
+            "source": "test_executor.py",
+            "lineno": 248,
+            "timestamp_millis": 1611331079720,
+            "message": "Handling phase QSFP 100G Ethernet Loopback test"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 249,
+            "timestamp_millis": 1611331079722,
+            "message": "Executing phase QSFP 100G Ethernet Loopback test"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 159,
+            "timestamp_millis": 1611331273773,
+            "message": "[{'priIpAddress': '192.168.33.20', 'priVlanId': 0, 'secSubnetMask': '255.255.254.0', 'secVlanId': 0, 'priSubnetMask': '255.255.254.0', 'priGateway': '192.168.32.1', 'secGateway': '192.168.32.1', 'priDhcpEnable': False, 'secIpAddress': '192.168.33.120', 'idx': 1, 'secDhcpEnable': False}, {'priIpAddress': '0.0.0.0', 'priVlanId': 0, 'secSubnetMask': '0.0.0.0', 'secVlanId': 0, 'priSubnetMask': '0.0.0.0', 'priGateway': '0.0.0.0', 'secGateway': '0.0.0.0', 'secIpAddress': '0.0.0.0', 'idx': 2}, {'priIpAddress': '0.0.0.0', 'priVlanId': 0, 'secSubnetMask': '0.0.0.0', 'secVlanId': 0, 'priSubnetMask': '0.0.0.0', 'priGateway': '0.0.0.0', 'secGateway': '0.0.0.0', 'secIpAddress': '0.0.0.0', 'idx': 3}, {'priIpAddress': '0.0.0.0', 'priVlanId': 0, 'secSubnetMask': '0.0.0.0', 'secVlanId': 0, 'priSubnetMask': '0.0.0.0', 'priGateway': '0.0.0.0', 'secGateway': '0.0.0.0', 'secIpAddress': '0.0.0.0', 'idx': 4}]"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 214,
+            "timestamp_millis": 1611331294144,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 300,
+            "timestamp_millis": 1611331313629,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 322,
+            "timestamp_millis": 1611331315524,
+            "message": "B-HD-1"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 325,
+            "timestamp_millis": 1611331333072,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 328,
+            "timestamp_millis": 1611331334516,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 322,
+            "timestamp_millis": 1611331336451,
+            "message": "B-HD-2"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 325,
+            "timestamp_millis": 1611331352655,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 328,
+            "timestamp_millis": 1611331354032,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 322,
+            "timestamp_millis": 1611331355815,
+            "message": "B-HD-3"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 325,
+            "timestamp_millis": 1611331372702,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 328,
+            "timestamp_millis": 1611331374080,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 322,
+            "timestamp_millis": 1611331375683,
+            "message": "B-HD-4"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 325,
+            "timestamp_millis": 1611331392817,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 328,
+            "timestamp_millis": 1611331393966,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 322,
+            "timestamp_millis": 1611331395646,
+            "message": "A-HD-1"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 325,
+            "timestamp_millis": 1611331412257,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 328,
+            "timestamp_millis": 1611331413775,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 322,
+            "timestamp_millis": 1611331415114,
+            "message": "A-HD-2"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 325,
+            "timestamp_millis": 1611331432670,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 328,
+            "timestamp_millis": 1611331433756,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 322,
+            "timestamp_millis": 1611331435324,
+            "message": "A-HD-3"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 325,
+            "timestamp_millis": 1611331451372,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 328,
+            "timestamp_millis": 1611331452410,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 322,
+            "timestamp_millis": 1611331453962,
+            "message": "A-HD-4"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 325,
+            "timestamp_millis": 1611331471677,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 328,
+            "timestamp_millis": 1611331472849,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 348,
+            "timestamp_millis": 1611331474538,
+            "message": "C-HD-5"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 351,
+            "timestamp_millis": 1611331492965,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 354,
+            "timestamp_millis": 1611331494467,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 348,
+            "timestamp_millis": 1611331496473,
+            "message": "C-HD-6"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 351,
+            "timestamp_millis": 1611331512458,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 354,
+            "timestamp_millis": 1611331513584,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 348,
+            "timestamp_millis": 1611331515388,
+            "message": "C-HD-7"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 351,
+            "timestamp_millis": 1611331532533,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 354,
+            "timestamp_millis": 1611331533801,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 348,
+            "timestamp_millis": 1611331535539,
+            "message": "C-HD-8"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 351,
+            "timestamp_millis": 1611331551214,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 354,
+            "timestamp_millis": 1611331552515,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 348,
+            "timestamp_millis": 1611331553897,
+            "message": "D-HD-5"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 351,
+            "timestamp_millis": 1611331555146,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 354,
+            "timestamp_millis": 1611331573918,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 348,
+            "timestamp_millis": 1611331575619,
+            "message": "D-HD-6"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 351,
+            "timestamp_millis": 1611331592519,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 354,
+            "timestamp_millis": 1611331593820,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 348,
+            "timestamp_millis": 1611331595488,
+            "message": "D-HD-7"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 351,
+            "timestamp_millis": 1611331612841,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 354,
+            "timestamp_millis": 1611331614263,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 348,
+            "timestamp_millis": 1611331616053,
+            "message": "D-HD-8"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 351,
+            "timestamp_millis": 1611331631941,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 354,
+            "timestamp_millis": 1611331633296,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 376,
+            "timestamp_millis": 1611331634841,
+            "message": "C-HD-1"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 379,
+            "timestamp_millis": 1611331652834,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 382,
+            "timestamp_millis": 1611331654264,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 376,
+            "timestamp_millis": 1611331656079,
+            "message": "C-HD-2"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 379,
+            "timestamp_millis": 1611331672475,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 382,
+            "timestamp_millis": 1611331673637,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 376,
+            "timestamp_millis": 1611331675690,
+            "message": "C-HD-3"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 379,
+            "timestamp_millis": 1611331692997,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 382,
+            "timestamp_millis": 1611331694142,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 376,
+            "timestamp_millis": 1611331696209,
+            "message": "C-HD-4"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 379,
+            "timestamp_millis": 1611331712082,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 382,
+            "timestamp_millis": 1611331713596,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 376,
+            "timestamp_millis": 1611331715501,
+            "message": "D-HD-1"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 379,
+            "timestamp_millis": 1611331733084,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 382,
+            "timestamp_millis": 1611331734790,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 376,
+            "timestamp_millis": 1611331736712,
+            "message": "D-HD-2"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 379,
+            "timestamp_millis": 1611331752740,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 382,
+            "timestamp_millis": 1611331753911,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 376,
+            "timestamp_millis": 1611331755814,
+            "message": "D-HD-3"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 379,
+            "timestamp_millis": 1611331773907,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 382,
+            "timestamp_millis": 1611331791086,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 376,
+            "timestamp_millis": 1611331792903,
+            "message": "D-HD-4"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 379,
+            "timestamp_millis": 1611331793922,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 382,
+            "timestamp_millis": 1611331812379,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 401,
+            "timestamp_millis": 1611331814215,
+            "message": "B-HD-5"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 404,
+            "timestamp_millis": 1611331832933,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 407,
+            "timestamp_millis": 1611331834479,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 401,
+            "timestamp_millis": 1611331836273,
+            "message": "B-HD-6"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 404,
+            "timestamp_millis": 1611331852933,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 407,
+            "timestamp_millis": 1611331853897,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 401,
+            "timestamp_millis": 1611331855499,
+            "message": "B-HD-7"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 404,
+            "timestamp_millis": 1611331872293,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 407,
+            "timestamp_millis": 1611331873466,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 401,
+            "timestamp_millis": 1611331875218,
+            "message": "B-HD-8"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 404,
+            "timestamp_millis": 1611331892711,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 407,
+            "timestamp_millis": 1611331893977,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 401,
+            "timestamp_millis": 1611331895715,
+            "message": "A-HD-5"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 404,
+            "timestamp_millis": 1611331913493,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 407,
+            "timestamp_millis": 1611331915067,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 401,
+            "timestamp_millis": 1611331916905,
+            "message": "A-HD-6"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 404,
+            "timestamp_millis": 1611331932374,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 407,
+            "timestamp_millis": 1611331933501,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 401,
+            "timestamp_millis": 1611331935359,
+            "message": "A-HD-7"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 404,
+            "timestamp_millis": 1611331951685,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 407,
+            "timestamp_millis": 1611331953041,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 401,
+            "timestamp_millis": 1611331954532,
+            "message": "A-HD-8"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 404,
+            "timestamp_millis": 1611331973271,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 407,
+            "timestamp_millis": 1611331974595,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 420,
+            "timestamp_millis": 1611332008982,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 430,
+            "timestamp_millis": 1611332052664,
+            "message": "<Response [200]>"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 445,
+            "timestamp_millis": 1611332105449,
+            "message": "setting ipWan counters failed"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 476,
+            "timestamp_millis": 1611332121473,
+            "message": "{'priEthMACaddr': '09:33:33:<REDACTED>', 'secEthMACaddr': '09:44:44:<REDACTED>', 'priTxPkts': '3738624', 'priRxPkts': '0', 'secTxPkts': '3732816', 'secRxPkts': '0', 'priTxRate': '3322.05 Mbps', 'priRxRate': '0.00 Mbps', 'secTxRate': '3317.79 Mbps', 'secRxRate': '0.00 Mbps', 'priRxErrs': '0', 'secRxErrs': '0', 'hostName': 'SNP-0123456778', 'registrationServer': '', 'systemServer': '', 'registrationServerConnected': '', 'txConfigBw25G': ['8700.0', '8700.0', '8700.0', '8700.0'], 'txConfigBw100G': '34.8000 Gbps', 'rxConfigBw25G': ['13048.0', '13048.0', '13048.0', '13048.0'], 'rxConfigBw100G': '52.1920 Gbps', 'priRxOverBandwidth': False, 'secRxOverBandwidth': False}"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 493,
+            "timestamp_millis": 1611332121474,
+            "message": "getting iPWan status failed"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.QSFP 100G Ethernet Loopback test",
+            "source": "qsfp.py",
+            "lineno": 503,
+            "timestamp_millis": 1611332121474,
+            "message": "cannot parse Ethernet rate"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.util.threads",
+            "source": "threads.py",
+            "lineno": 169,
+            "timestamp_millis": 1611332169401,
+            "message": "Thread finished: <PhaseExecutorThread: (QSFP 100G Ethernet Loopback test)>"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 277,
+            "timestamp_millis": 1611332169402,
+            "message": "Phase QSFP 100G Ethernet Loopback test finished with result PhaseResult.CONTINUE"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574",
+            "source": "test_executor.py",
+            "lineno": 248,
+            "timestamp_millis": 1611332169402,
+            "message": "Handling phase Front Panel Fans Test"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 249,
+            "timestamp_millis": 1611332169403,
+            "message": "Executing phase Front Panel Fans Test"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 39,
+            "timestamp_millis": 1611332170859,
+            "message": "su - \r\nSNP-0123456778:~$ su - \r\nPassword: "
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 43,
+            "timestamp_millis": 1611332170960,
+            "message": "Authenticating..."
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 47,
+            "timestamp_millis": 1611332171061,
+            "message": "\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 57,
+            "timestamp_millis": 1611332171363,
+            "message": "pwd\r\n/home/root\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 57,
+            "timestamp_millis": 1611332171665,
+            "message": "killall snp_app\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 57,
+            "timestamp_millis": 1611332171968,
+            "message": "killall java\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.Front Panel Fans Test",
+            "source": "fan_test.py",
+            "lineno": 40,
+            "timestamp_millis": 1611332171968,
+            "message": "['\\r\\nroot@SNP-0123456778:~#', 'pwd\\r\\n/home/root\\r\\nroot@SNP-0123456778:~#', 'killall snp_app\\r\\nroot@SNP-0123456778:~#', 'killall java\\r\\nroot@SNP-0123456778:~#']"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 39,
+            "timestamp_millis": 1611332177358,
+            "message": "su - \r\nSNP-0123456778:~$ su - \r\nPassword: "
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 43,
+            "timestamp_millis": 1611332177459,
+            "message": "Authenticating..."
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 47,
+            "timestamp_millis": 1611332177560,
+            "message": "\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 57,
+            "timestamp_millis": 1611332177863,
+            "message": "cd /home/root\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 57,
+            "timestamp_millis": 1611332178165,
+            "message": "./fan_test -s 100\r\nFINDING FANS (snp-working)\r\nFans are at 0x4D\r\n\r\nSetting all fans to 100%...\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 57,
+            "timestamp_millis": 1611332178467,
+            "message": "./fan_test -c\r\nFINDING FANS (snp-working)\r\nFans are at 0x4D\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.Front Panel Fans Test",
+            "source": "fan_test.py",
+            "lineno": 50,
+            "timestamp_millis": 1611332178467,
+            "message": "['\\r\\nroot@SNP-0123456778:~#', 'cd /home/root\\r\\nroot@SNP-0123456778:~#', './fan_test -s 100\\r\\nFINDING FANS (snp-working)\\r\\nFans are at 0x4D\\r\\n\\r\\nSetting all fans to 100%...\\r\\nroot@SNP-0123456778:~#', './fan_test -c\\r\\nFINDING FANS (snp-working)\\r\\nFans are at 0x4D\\r\\nroot@SNP-0123456778:~#']"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 39,
+            "timestamp_millis": 1611332180856,
+            "message": "su - \r\nSNP-0123456778:~$ su - \r\nPassword: "
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 43,
+            "timestamp_millis": 1611332180957,
+            "message": "Authenticating..."
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 47,
+            "timestamp_millis": 1611332181058,
+            "message": "\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 57,
+            "timestamp_millis": 1611332181360,
+            "message": "cd /home/root\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 57,
+            "timestamp_millis": 1611332181663,
+            "message": "./fan_test -s 0\r\nFINDING FANS (snp-working)\r\nFans are at 0x4D\r\n\r\nSetting all fans to 0%...\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 57,
+            "timestamp_millis": 1611332181965,
+            "message": "./fan_test -c\r\nFINDING FANS (snp-working)\r\nFans are at 0x4D\r\nFan 1 is too slow. The RPM is lower than the minimum that can be recorded (1000 RPM).\r\nFan 2 is too slow. The RPM is lower than the minimum that can be recorded (1000 RPM).\r\nFan 3 is too slow. The RPM is lower than the minimum that can be recorded (1000 RPM).\r\nFan 4 is too slow. The RPM is lower than the minimum that can be recorded (1000 RPM).\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.Front Panel Fans Test",
+            "source": "fan_test.py",
+            "lineno": 80,
+            "timestamp_millis": 1611332181965,
+            "message": "['\\r\\nroot@SNP-0123456778:~#', 'cd /home/root\\r\\nroot@SNP-0123456778:~#', './fan_test -s 0\\r\\nFINDING FANS (snp-working)\\r\\nFans are at 0x4D\\r\\n\\r\\nSetting all fans to 0%...\\r\\nroot@SNP-0123456778:~#', './fan_test -c\\r\\nFINDING FANS (snp-working)\\r\\nFans are at 0x4D\\r\\nFan 1 is too slow. The RPM is lower than the minimum that can be recorded (1000 RPM).\\r\\nFan 2 is too slow. The RPM is lower than the minimum that can be recorded (1000 RPM).\\r\\nFan 3 is too slow. The RPM is lower than the minimum that can be recorded (1000 RPM).\\r\\nFan 4 is too slow. The RPM is lower than the minimum that can be recorded (1000 RPM).\\r\\nroot@SNP-0123456778:~#']"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 39,
+            "timestamp_millis": 1611332184340,
+            "message": "su - \r\nSNP-0123456778:~$ su - \r\nPassword: "
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 43,
+            "timestamp_millis": 1611332184441,
+            "message": "Authenticating..."
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 47,
+            "timestamp_millis": 1611332184542,
+            "message": "\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 57,
+            "timestamp_millis": 1611332184844,
+            "message": "cd /home/root\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 57,
+            "timestamp_millis": 1611332185147,
+            "message": "./fan_test -s 100\r\nFINDING FANS (snp-working)\r\nFans are at 0x4D\r\n\r\nSetting all fans to 100%...\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 57,
+            "timestamp_millis": 1611332185449,
+            "message": "pwd\r\n/home/root\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.Front Panel Fans Test",
+            "source": "fan_test.py",
+            "lineno": 109,
+            "timestamp_millis": 1611332185449,
+            "message": "['\\r\\nroot@SNP-0123456778:~#', 'cd /home/root\\r\\nroot@SNP-0123456778:~#', './fan_test -s 100\\r\\nFINDING FANS (snp-working)\\r\\nFans are at 0x4D\\r\\n\\r\\nSetting all fans to 100%...\\r\\nroot@SNP-0123456778:~#', 'pwd\\r\\n/home/root\\r\\nroot@SNP-0123456778:~#']"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.util.threads",
+            "source": "threads.py",
+            "lineno": 169,
+            "timestamp_millis": 1611332185449,
+            "message": "Thread finished: <PhaseExecutorThread: (Front Panel Fans Test)>"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 277,
+            "timestamp_millis": 1611332185450,
+            "message": "Phase Front Panel Fans Test finished with result PhaseResult.CONTINUE"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574",
+            "source": "test_executor.py",
+            "lineno": 248,
+            "timestamp_millis": 1611332185450,
+            "message": "Handling phase SSH Shutdown"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 249,
+            "timestamp_millis": 1611332185450,
+            "message": "Executing phase SSH Shutdown"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 39,
+            "timestamp_millis": 1611332186859,
+            "message": "su - \r\nSNP-0123456778:~$ su - \r\nPassword: "
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 43,
+            "timestamp_millis": 1611332186960,
+            "message": "Authenticating..."
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 47,
+            "timestamp_millis": 1611332187061,
+            "message": "\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.plug.SSHPlug",
+            "source": "ssh_plug.py",
+            "lineno": 57,
+            "timestamp_millis": 1611332187364,
+            "message": "shutdown -r now\r\n\u0007\r\r\nBroadcast message from root@SNP-0123456778 (pts/0) (Tue Nov 10 23:47:32 2020)\rThe system is going down for reboot NOW!\r\r\nroot@SNP-0123456778:~#"
+        },
+        {
+            "level": 20,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574.phase.SSH Shutdown",
+            "source": "fan_test.py",
+            "lineno": 133,
+            "timestamp_millis": 1611332187364,
+            "message": "['\\r\\nroot@SNP-0123456778:~#', 'shutdown -r now\\r\\n\\x07\\r\\r\\nBroadcast message from root@SNP-0123456778 (pts/0) (Tue Nov 10 23:47:32 2020)\\rThe system is going down for reboot NOW!\\r\\r\\nroot@SNP-0123456778:~#']"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.util.threads",
+            "source": "threads.py",
+            "lineno": 169,
+            "timestamp_millis": 1611332187364,
+            "message": "Thread finished: <PhaseExecutorThread: (SSH Shutdown)>"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 277,
+            "timestamp_millis": 1611332187365,
+            "message": "Phase SSH Shutdown finished with result PhaseResult.CONTINUE"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574",
+            "source": "test_executor.py",
+            "lineno": 248,
+            "timestamp_millis": 1611332187365,
+            "message": "Handling phase Waiting for UUT to boot...4m 20s"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 249,
+            "timestamp_millis": 1611332187365,
+            "message": "Executing phase Waiting for UUT to boot...4m 20s"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.util.threads",
+            "source": "threads.py",
+            "lineno": 169,
+            "timestamp_millis": 1611332487365,
+            "message": "Thread finished: <PhaseExecutorThread: (Waiting for UUT to boot...4m 20s)>"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 277,
+            "timestamp_millis": 1611332487365,
+            "message": "Phase Waiting for UUT to boot...4m 20s finished with result PhaseResult.CONTINUE"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574",
+            "source": "test_executor.py",
+            "lineno": 248,
+            "timestamp_millis": 1611332487365,
+            "message": "Handling phase Clear Alarms Log"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 249,
+            "timestamp_millis": 1611332487365,
+            "message": "Executing phase Clear Alarms Log"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.util.threads",
+            "source": "threads.py",
+            "lineno": 169,
+            "timestamp_millis": 1611332492069,
+            "message": "Thread finished: <PhaseExecutorThread: (Clear Alarms Log)>"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 277,
+            "timestamp_millis": 1611332492069,
+            "message": "Phase Clear Alarms Log finished with result PhaseResult.CONTINUE"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574",
+            "source": "test_executor.py",
+            "lineno": 248,
+            "timestamp_millis": 1611332492069,
+            "message": "Handling phase SNP Restore Factory Defaults"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 249,
+            "timestamp_millis": 1611332492070,
+            "message": "Executing phase SNP Restore Factory Defaults"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.util.threads",
+            "source": "threads.py",
+            "lineno": 169,
+            "timestamp_millis": 1611332536063,
+            "message": "Thread finished: <PhaseExecutorThread: (SNP Restore Factory Defaults)>"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.phase_executor",
+            "source": "phase_executor.py",
+            "lineno": 277,
+            "timestamp_millis": 1611332536064,
+            "message": "Phase SNP Restore Factory Defaults finished with result PhaseResult.CONTINUE"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.plugs",
+            "source": "__init__.py",
+            "lineno": 458,
+            "timestamp_millis": 1611332536064,
+            "message": "Tearing down all plugs."
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.util.threads",
+            "source": "threads.py",
+            "lineno": 169,
+            "timestamp_millis": 1611332536064,
+            "message": "Thread finished: <PlugTearDownThread: <class 'plan.plugs.GreetPlug.GreetPlug'>>"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.util.threads",
+            "source": "threads.py",
+            "lineno": 169,
+            "timestamp_millis": 1611332536065,
+            "message": "Thread finished: <PlugTearDownThread: <class 'plan.plugs.ssh_plug.SSHPlug'>>"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.util.threads",
+            "source": "threads.py",
+            "lineno": 169,
+            "timestamp_millis": 1611332536065,
+            "message": "Thread finished: <PlugTearDownThread: <class 'plan.plugs.SNP_plug.SNPPlug'>>"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.util.threads",
+            "source": "threads.py",
+            "lineno": 169,
+            "timestamp_millis": 1611332536066,
+            "message": "Thread finished: <PlugTearDownThread: <class 'plan.plugs.ping_plug.PingPlug'>>"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.test_record.16856:561cc524ee644459:46767decfecf4ff9:1611330194574",
+            "source": "test_state.py",
+            "lineno": 420,
+            "timestamp_millis": 1611332536066,
+            "message": "Finishing test execution normally with outcome FAIL."
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.util.threads",
+            "source": "threads.py",
+            "lineno": 169,
+            "timestamp_millis": 1611332536066,
+            "message": "Thread finished: TestExecutorThread"
+        },
+        {
+            "level": 10,
+            "logger_name": "openhtf.core.test_descriptor",
+            "source": "test_descriptor.py",
+            "lineno": 350,
+            "timestamp_millis": 1611332536066,
+            "message": "Test completed for SNP_audit_test, outputting now."
+        }
+    ],
+    "station_id": "TEST",
+    "code_info": {
+        "name": "SNP_Audit.py",
+        "docstring": null,
+        "sourcecode": ""
+    }
+}
