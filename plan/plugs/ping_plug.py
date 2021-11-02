@@ -7,7 +7,7 @@ class PingPlug(plugs.BasePlug):
       print('Instantiating %s!' % type(self).__name__)
     def ping(self, host):
       result = True
-      ping_command = ['ping', host] 
+      ping_command = ['ping','-c','4', host] 
       ping_output = check_output(ping_command)
       
       result = 'TTL expired' in str(ping_output)

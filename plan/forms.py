@@ -96,17 +96,17 @@ DUT_FORM_LAYOUT = {
             "titleMap": [
                 { "value": "12", "name": "12" },
                 { "value": "11", "name": "11" },
-                { "value": "12", "name": "10" },
-                { "value": "11", "name": "9" },
-                { "value": "12", "name": "8" },
-                { "value": "11", "name": "7" },
-                { "value": "12", "name": "6" },
-                { "value": "11", "name": "5" },
-                { "value": "12", "name": "4" },
-                { "value": "11", "name": "3" },
-                { "value": "12", "name": "2" },
-                { "value": "11", "name": "1" },
-                { "value": "12", "name": "0" }
+                { "value": "10", "name": "10" },
+                { "value": "9", "name": "9" },
+                { "value": "8", "name": "8" },
+                { "value": "7", "name": "7" },
+                { "value": "6", "name": "6" },
+                { "value": "5", "name": "5" },
+                { "value": "4", "name": "4" },
+                { "value": "3", "name": "3" },
+                { "value": "2", "name": "2" },
+                { "value": "1", "name": "1" },
+                { "value": "0", "name": "0" }
                 
             ]
         },
