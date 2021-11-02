@@ -42,7 +42,7 @@ def check_for_rest():
         print('rest connect passed')
         return True
 
-@plann.testcase('Waiting for UUT to boot...5m 30s')
+@plann.testcase('Waiting for UUT to boot...')
 @htf.measures(htf.Measurement('ping_response').equals(True))
 @htf.measures(htf.Measurement('html_response').equals(True))
 def waiting(test):
@@ -56,7 +56,7 @@ def waiting(test):
         html = check_for_rest()
     except RetryError as e:
         test.logger.info("HTTP REST error: {}".format(e))
-
+    time.sleep(20)
     
     test.measurements.ping_response = ping
     test.measurements.html_response = html
