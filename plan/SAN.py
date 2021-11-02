@@ -5,7 +5,6 @@ import openhtf as htf
 from openhtf import PhaseResult
 from openhtf.plugs.user_input import UserInput
 #from openhtf.util import conf
-from openhtf_docx_report import docx_report_callback
 from spintop_openhtf.callbacks import station_server
 import webbrowser
 from spintop_openhtf import TestPlan,  conf
@@ -47,7 +46,7 @@ HERE = os.path.abspath(os.path.dirname(__file__))
 def DUT(test, greet):
     
     response = greet.prompt_tester_information()
-
+    reportpath = '/results'
    
     if 'serialnumber' not in response:
         return PhaseResult.REPEAT
@@ -68,7 +67,7 @@ def DUT(test, greet):
 
     test.test_record.metadata['test_version'] ='1.0'
     test.test_record.metadata['user_id'] = 'default'
-    test.test_record.metadata['path'] = 'c:\\MSA2060\\Reports\\'
+    test.test_record.metadata['path'] =  reportpath
     
     
     test.dut_id = response['serialnumber']

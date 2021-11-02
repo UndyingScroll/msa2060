@@ -9,7 +9,7 @@ passvalue = markdown("""
 
 All tests have passed; unplug all cables and stamp the side of the chassis.
 
-""" % plann.image_url('c:\\MSA2060\\pass.png'))
+""" % plann.image_url('.//pass.png'))
 
 failevalue = markdown("""
 <img src="%s" width="800px" />
@@ -18,7 +18,7 @@ failevalue = markdown("""
 
 One or more tests have failed.
 
-""" % plann.image_url('c:\\MSA2060\\fail.png'))
+""" % plann.image_url('.//fail.png'))
 
 helpvalue = markdown("""
 
@@ -28,7 +28,7 @@ helpvalue = markdown("""
 ##Turn both the Power Supply 1 (1) and Power Supply 2 (1) switches ON.
 ##Click OKAY to continue
 <img src="%s" width="800px" />
-""" % plann.image_url('c:\\MSA2060\\image002.jpg'))
+""" % plann.image_url('.//image002.jpg'))
 
 
 DUT_FORM_LAYOUT = {
