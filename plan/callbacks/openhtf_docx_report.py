@@ -1,4 +1,5 @@
 from openhtf.output.callbacks import json_factory
+from pathlib import Path
 from docx.shared import Cm
 from docxtpl import DocxTemplate, InlineImage
 import datetime, time, os
@@ -107,7 +108,7 @@ def docx_report_callback(test_record):
     file_string = str(template['dut_id'])+'_'+str(template['test_name'])+'_'+str(record_dict['start_time_millis']) +'_'+str(template['test_outcome'])+'.docx'
     
     
-    target_file = path + '\\'+file_string
+    target_file = Path(path) / file_string
     
     template_doc.render(template)
     template_doc.save(target_file)
